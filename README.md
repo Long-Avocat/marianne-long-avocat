@@ -131,7 +131,7 @@ Le projet est configuré pour être déployé automatiquement sur GitHub Pages v
    - Le workflow est défini dans `.github/workflows/deploy.yml`
 
 3. **Votre site sera disponible à** :
-   - `https://prcaen.github.io/marianne-long-avocat`
+   - `https://github.com/Long-Avocat/marianne-long-avocat`
 
 #### Déploiement manuel (alternative)
 
