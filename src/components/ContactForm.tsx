@@ -13,7 +13,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
     message: '',
   })
   const [errors, setErrors] = useState<Record<string, string>>({})
-  const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const validate = () => {
@@ -37,17 +36,32 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
     return Object.keys(newErrors).length === 0
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
     if (!validate()) return
 
-    setIsSubmitting(true)
+    const recipientEmail = 'mrnne.long@gmail.com'
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    // Construct email body
+    let emailBody = `Bonjour,\n\n`
+    emailBody += `${formData.message}\n\n`
+    emailBody += `---\n`
+    emailBody += `Nom : ${formData.name}\n`
+    emailBody += `Email : ${formData.email}\n`
+    if (formData.phone) {
+      emailBody += `Téléphone : ${formData.phone}\n`
+    }
     
-    setIsSubmitting(false)
+    // Construct mailto link
+    const subject = encodeURIComponent(`Contact depuis le site web - ${formData.name}`)
+    const body = encodeURIComponent(emailBody)
+    const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`
+    
+    // Open default email client
+    window.location.href = mailtoLink
+    
+    // Show success message and close
     setIsSubmitted(true)
     
     // Reset form after 3 seconds and close
@@ -104,8 +118,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-dark mb-2">Message envoyé !</h3>
-              <p className="text-neutral">Je vous répondrai dans les plus brefs délais.</p>
+              <h3 className="text-2xl font-bold text-dark mb-2">Redirection en cours</h3>
+              <p className="text-neutral">Votre client de messagerie va s'ouvrir pour envoyer votre message.</p>
             </motion.div>
           ) : (
             <>
@@ -184,10 +198,9 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
 
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className="w-full px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
-                  {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
+                  Envoyer
                 </button>
               </form>
             </>
