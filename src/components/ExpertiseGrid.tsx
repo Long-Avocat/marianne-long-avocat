@@ -5,7 +5,7 @@ import { Lock, FileText, TrendingUp, Bot, Shield, Database } from 'lucide-react'
 interface Expertise {
   title: string
   description: string
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
 }
 
 const expertiseAreas: Expertise[] = [
