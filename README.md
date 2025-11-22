@@ -116,17 +116,44 @@ Le site est entièrement responsive avec une approche mobile-first. Tous les com
 
 ## 🚀 Déploiement
 
-Le projet peut être déployé sur n'importe quel service d'hébergement statique :
-- Vercel
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
+### GitHub Pages (Recommandé)
+
+Le projet est configuré pour être déployé automatiquement sur GitHub Pages via GitHub Actions.
+
+#### Configuration automatique (via GitHub Actions)
+
+1. **Activer GitHub Pages dans les paramètres du dépôt** :
+   - Allez dans Settings → Pages
+   - Sous "Source", sélectionnez "GitHub Actions"
+
+2. **Le déploiement se fait automatiquement** :
+   - À chaque push sur la branche `main`, le site sera automatiquement déployé
+   - Le workflow est défini dans `.github/workflows/deploy.yml`
+
+3. **Votre site sera disponible à** :
+   - `https://prcaen.github.io/marianne-long-avocat`
+
+#### Déploiement manuel (alternative)
+
+Si vous préférez déployer manuellement :
 
 ```bash
 npm run build
+npm run deploy
 ```
 
-Les fichiers de production seront dans le dossier `dist/`.
+#### Domaine personnalisé
+
+Si vous utilisez un domaine personnalisé (comme `long-avocat.com`), le fichier `CNAME` est déjà configuré. Assurez-vous d'ajouter un enregistrement DNS CNAME pointant vers `prcaen.github.io` dans les paramètres de votre domaine.
+
+### Autres options d'hébergement
+
+Le projet peut également être déployé sur :
+- Vercel
+- Netlify
+- AWS S3 + CloudFront
+
+Les fichiers de production seront dans le dossier `dist/` après `npm run build`.
 
 ## 🔄 Extension Future
 
