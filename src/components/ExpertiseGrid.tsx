@@ -69,13 +69,13 @@ const ExpertiseGrid: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ scale: 1.05, y: -10 }}
-              className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden"
+              className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl overflow-hidden"
             >
               {/* Hover Effect Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               <div className="relative z-10">
-                <div className="mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-4">
                   <expertise.icon className="w-12 h-12 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">

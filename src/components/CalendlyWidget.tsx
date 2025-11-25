@@ -6,9 +6,7 @@ interface CalendlyWidgetProps {
 }
 
 const CalendlyWidget: React.FC<CalendlyWidgetProps> = ({ onClose }) => {
-  // Replace 'YOUR_CAL_USERNAME' with actual Cal.com username
-  // You can also add an event slug: 'https://cal.com/YOUR_CAL_USERNAME/EVENT_SLUG'
-  const calUrl = 'https://cal.com/YOUR_CAL_USERNAME'
+  const calUrl = 'https://cal.com/mariannelong'
 
   return (
     <AnimatePresence>

@@ -73,7 +73,7 @@ const ApproachSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                className="bg-light/10 backdrop-blur-sm rounded-xl p-6 border border-light/20 hover:bg-light/15 transition-all duration-300"
+                className="bg-light/10 backdrop-blur-sm rounded-xl p-6 border border-light/20 hover:bg-light/15"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
