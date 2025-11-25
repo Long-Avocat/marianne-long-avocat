@@ -13,6 +13,9 @@ export default {
         accent: '#D4C2A1',
         neutral: '#AD9C92',
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
