@@ -6,22 +6,22 @@ const ApproachSection: React.FC = () => {
   const differentiatingPoints = [
     {
       title: 'Vision 360°',
-      description: 'Expérience unique côté client ET prestataire pour une compréhension globale des enjeux',
+      description: 'Une double expérience côté client et côté prestataire pour comprendre finement vos enjeux business, techniques et organisationnels.',
       icon: Eye,
     },
     {
       title: 'Approche Pragmatique',
-      description: 'Solutions juridiques adaptées aux réalités opérationnelles des projets IT',
+      description: 'Des solutions juridiques concrètes, applicables et adaptées aux contraintes réelles de vos équipes et de vos projets.',
       icon: Zap,
     },
     {
       title: 'Accompagnement Stratégique',
-      description: 'Au-delà du juridique : conseil stratégique pour optimiser vos projets',
+      description: 'Un conseil qui dépasse le juridique : optimiser vos projets, sécuriser vos innovations, et éclairer vos décisions clés.',
       icon: Target,
     },
     {
-      title: 'Accessibilité',
-      description: 'Avocat moderne et accessible, sans barrière de communication',
+      title: 'Réactivité et disponibilité',
+      description: 'Une avocate disponible, réactive et engagée, alignée sur le le rythme et les impératifs de vos projets.',
       icon: Handshake,
     },
   ]
@@ -30,7 +30,7 @@ const ApproachSection: React.FC = () => {
     <section className="py-20 px-4 bg-dark text-light relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        
+
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -44,17 +44,16 @@ const ApproachSection: React.FC = () => {
             className="space-y-6"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Votre avocat IT qui maitrise les enjeux{' '}
-              <span className="text-primary">juridique et business</span>
+              Votre avocate IT qui maîtrise les enjeux <span className="text-primary">juridiques et opérationnels</span>
             </h2>
             <p className="text-lg leading-relaxed text-light/90">
-              Unique dans son positionnement, je combine une expertise juridique approfondie 
-              avec une compréhension opérationnelle rare. Mon parcours chez Avanade m'a permis 
-              de comprendre les enjeux des prestataires, complétant ainsi ma vision client.
+              Grâce à ma double expérience en cabinet et en entreprise, je maîtrise à la fois les exigences juridiques et les réalités du terrain. Je connais le fonctionnement des directions IT, Data et Sécurité, leurs contraintes, leurs priorités et leurs arbitrages quotidiens.
             </p>
             <p className="text-lg leading-relaxed text-light/90">
-              Cette double perspective me permet de proposer des solutions juridiques 
-              pragmatiques et négociables, qui servent réellement vos objectifs business.
+              Cette vision complète me permet de vous proposer des solutions pragmatiques, actionnables et alignées avec vos objectifs business.
+            </p>
+            <p className="text-lg leading-relaxed text-light/90">
+              Mon rôle : être un véritable facilitateur, capable de sécuriser vos projets tout en accélérant leur mise en œuvre.
             </p>
           </motion.div>
 
