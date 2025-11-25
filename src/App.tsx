@@ -6,6 +6,7 @@ import ApproachSection from './components/ApproachSection'
 import TestimonialsCarousel from './components/TestimonialsCarousel'
 import Footer from './components/Footer'
 import LegalMentions from './components/LegalMentions'
+import PrivacyPolicy from './components/PrivacyPolicy'
 
 const Home: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mentions-legales" element={<LegalMentions />} />
+        <Route path="/politique-de-confidentialite" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </div>

@@ -45,12 +45,20 @@ const Footer: React.FC = () => {
             <div className="text-light/80 text-sm">
               <p>© {currentYear} Marianne Long - Avocat IT / Data / IA / Cybersécurité</p>
             </div>
-            <Link
-              to="/mentions-legales"
-              className="text-light/80 hover:text-primary transition-colors duration-300 underline text-sm"
-            >
-              Mentions légales
-            </Link>
+            <div className="flex gap-6">
+              <Link
+                to="/mentions-legales"
+                className="text-light/80 hover:text-primary transition-colors duration-300 underline text-sm"
+              >
+                Mentions légales
+              </Link>
+              <Link
+                to="/politique-de-confidentialite"
+                className="text-light/80 hover:text-primary transition-colors duration-300 underline text-sm"
+              >
+                Politique de confidentialité
+              </Link>
+            </div>
           </div>
         </div>
       </div>
