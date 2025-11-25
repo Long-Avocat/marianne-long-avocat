@@ -8,21 +8,26 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-dark text-light py-12 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          {/* Left side - Legal mentions */}
-          <div className="text-light/80 text-sm">
-            <p className="mb-2">© {currentYear} Marianne Long - Avocat IT / Data / IA / Cybersécurité</p>
-            <Link
-              to="/mentions-legales"
-              className="hover:text-primary transition-colors duration-300 underline"
-            >
-              Mentions légales
-            </Link>
+        <div className="flex flex-col md:flex-row items-start justify-between gap-8 mb-8">
+          {/* Contact section */}
+          <div className="text-light/80">
+            <div className="space-y-2 text-sm">
+              <p className="font-medium text-light">Marianne LONG</p>
+              <p>Avocate au barreau de Paris</p>
+              <p>
+                <a
+                  href="mailto:marianne@long-avocat.com"
+                  className="hover:text-primary transition-colors duration-300"
+                >
+                  marianne@long-avocat.com
+                </a>
+              </p>
+              <p>4 rue de Rome - 75008 Paris</p>
+            </div>
           </div>
 
           {/* Right side - LinkedIn */}
-          <div className="flex items-center gap-2">
-            <a
+          <a
               href="https://www.linkedin.com/in/mariannelong/"
               target="_blank"
               rel="noopener noreferrer"
@@ -32,6 +37,20 @@ const Footer: React.FC = () => {
               <Linkedin className="w-5 h-5" strokeWidth={1.5} />
               <span className="text-sm">LinkedIn</span>
             </a>
+        </div>
+
+        {/* Bottom section - Legal mentions */}
+        <div className="border-t border-light/20 pt-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="text-light/80 text-sm">
+              <p>© {currentYear} Marianne Long - Avocat IT / Data / IA / Cybersécurité</p>
+            </div>
+            <Link
+              to="/mentions-legales"
+              className="text-light/80 hover:text-primary transition-colors duration-300 underline text-sm"
+            >
+              Mentions légales
+            </Link>
           </div>
         </div>
       </div>
