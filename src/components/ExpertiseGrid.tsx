@@ -68,8 +68,7 @@ const ExpertiseGrid: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05, y: -10 }}
-              className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl overflow-hidden"
+              className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl overflow-hidden cursor-default"
             >
               {/* Hover Effect Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
