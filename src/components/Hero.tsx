@@ -38,13 +38,13 @@ const Hero: React.FC = () => {
               className="text-lg text-dark/80 leading-relaxed space-y-4"
             >
               <p>
-                Expertise en droit numérique avec une vision unique : 
-                <span className="font-semibold text-primary"> côté client ET prestataire</span>
+                <strong>Votre alliée pour sécuriser et accélérer vos projets IT</strong>
               </p>
               <p>
-                Accompagnement stratégique en RGPD, Cybersécurité, Contrats IT complexes, 
-                Due Diligence M&A, IA Act et DORA.
-              </p>
+              Avocate en droit des nouvelles technologies depuis 2016, j’accompagne les entreprises dans la maîtrise juridique de leurs projets IT, data et innovation.</p>
+              <p>Forte de plus de sept années en cabinets parisiens spécialisés (Lexing, Racine, Aramis), j’ai développé une forte expertise en négociation de contrats IT complexes, conformité réglementaire (RGPD, DORA, IA Act, NIS 2), déploiement de projets innovants, accompagnement lors de contrôles CNIL et protection des actifs immatériels.</p>
+              <p>Pour comprendre pleinement les enjeux opérationnels et les arbitrages business, j’ai également exercé deux ans en entreprise, au plus proche des équipes IT, Data et sécurité. Cette double expérience cabinet / entreprise me permet aujourd’hui d’offrir un accompagnement pragmatique, efficace et orienté solutions, en parlant le même langage que vos équipes.</p>
+              <p>Titulaire d’un Master 2 Droit du Numérique (Paris II – Assas) et d’un double diplôme en droit international (Université de Maastricht), j’interviens pour structurer, sécuriser et négocier vos projets digitaux, tout en assurant votre conformité aux réglementations technologiques émergentes.</p>
             </motion.div>
 
             {/* CTAs */}

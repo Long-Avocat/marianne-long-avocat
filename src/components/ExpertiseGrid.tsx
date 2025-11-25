@@ -10,34 +10,34 @@ interface Expertise {
 
 const expertiseAreas: Expertise[] = [
   {
-    title: 'RGPD & Cybersécurité',
-    description: 'Conformité, transferts internationaux, contrôles CNIL',
-    icon: Lock,
-  },
-  {
-    title: 'Contrats IT Complexes',
-    description: 'Négociation et rédaction de contrats IT sur mesure',
+    title: 'Contrats informatiques',
+    description: 'Structuration, rédaction et négociation de tous types de contrats IT, simples ou complexes (SaaS, licences, maintenance, infogérance, API, Cloud, etc.). Sécurisation complète, du cadrage au déploiement.',
     icon: FileText,
   },
   {
-    title: 'Due Diligence M&A/TSA',
-    description: 'Audit juridique et accompagnement dans les opérations de fusion-acquisition',
-    icon: TrendingUp,
+    title: 'Données personnelles & Cybersécurité',
+    description: 'Accompagnement sur l’ensemble des enjeux RGPD : mise en conformité, gestion des transferts internationaux, documentation, audits. Assistance lors des contrôles CNIL. Conseils sur les obligations DORA et NIS2 et intégration des exigences de sécurité dans vos projets.',
+    icon: Lock,
   },
   {
-    title: 'IA Act',
-    description: 'Accompagnement sur la réglementation européenne sur l\'intelligence artificielle',
+    title: 'Intelligence Artificielle',
+    description: 'Accompagnement complet à la conformité AI Act : qualification des systèmes, analyse des obligations, documentation, gestion des risques et sécurisation juridique de vos projets IA.',
     icon: Bot,
   },
   {
-    title: 'DORA',
-    description: 'Conformité au règlement européen sur la résilience opérationnelle numérique',
+    title: 'Propriété intellectuelle',
+    description: 'Protection contractuelle de vos actifs immatériels (logiciels, bases de données, savoir-faire). Encadrement des licences, cessions de droits et usages dans vos contrats.',
+    icon: Database,
+  },
+  {
+    title: 'E-Commerce & Réglementations Digitales',
+    description: 'Mise en conformité de vos plateformes : DSA, DMA, SREN, obligations informationnelles. Audit complet de vos sites (mentions légales, CGU/CGV, cookies, parcours utilisateur) et structuration de votre documentation juridique en ligne.',
     icon: Shield,
   },
   {
-    title: 'Stratégie Data',
-    description: 'Optimisation de la gestion et de la valorisation des données',
-    icon: Database,
+    title: 'Due Diligence IT & Data',
+    description: 'Audit d’actifs immatériels dans le cadre d’opérations M&A : évaluation des risques RGPD, cybersécurité et contrats IT, analyse des dépendances critiques, négociations des TSA et recommandations opérationnelles.',
+    icon: TrendingUp,
   },
 ]
 
