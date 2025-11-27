@@ -6,6 +6,7 @@ import ApproachSection from './components/ApproachSection'
 import Footer from './components/Footer'
 import LegalMentions from './components/LegalMentions'
 import PrivacyPolicy from './components/PrivacyPolicy'
+import CookieBanner from './components/CookieBanner'
 
 // Component to track page views for Google Analytics
 const PageViewTracker: React.FC = () => {
@@ -13,8 +14,14 @@ const PageViewTracker: React.FC = () => {
   const gaMeasurementId = import.meta.env.VITE_GA_MEASUREMENT_ID
 
   useEffect(() => {
-    // Track page view when route changes
-    if (typeof window !== 'undefined' && window.gtag && gaMeasurementId) {
+    // Track page view when route changes, only if user has consented
+    const cookieConsent = localStorage.getItem('cookieConsent')
+    if (
+      typeof window !== 'undefined' &&
+      window.gtag &&
+      gaMeasurementId &&
+      cookieConsent === 'accepted'
+    ) {
       window.gtag('config', gaMeasurementId, {
         page_path: location.pathname + location.search,
       })
@@ -47,6 +54,7 @@ function App() {
         <Route path="/politique-de-confidentialite" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
+      <CookieBanner />
     </div>
   )
 }
