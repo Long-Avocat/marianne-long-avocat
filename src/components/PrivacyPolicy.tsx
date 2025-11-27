@@ -79,53 +79,26 @@ const PrivacyPolicy: React.FC = () => {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td className="border border-dark/20 px-4 py-3">
-                                                    Identité et coordonnées : nom de famille, prénom, adresse de courrier électronique, numéro de téléphone<br />
-                                                    Informations professionnelles : fonction exercée, société d'appartenance
+                                                <td rowSpan={4} className="border border-dark/20 px-4 py-3">
+                                                    <strong>Identité et coordonnées</strong> : nom de famille, prénom, adresse de courrier électronique, numéro de téléphone<br />
+                                                    <strong>Informations professionnelles</strong> : fonction exercée, société d'appartenance<br />
+                                                    <strong>Données techniques de connexion</strong> : adresse IP, journaux de connexion, informations sur le navigateur utilisé
                                                 </td>
-                                                <td className="border border-dark/20 px-4 py-3">Prospects / Clients / Partenaires</td>
-                                                <td className="border border-dark/20">
-                                                    <table>
-                                                        <tr>
-                                                            <td className="border border-dark/20 px-4 py-3">Gestion de la relation professionnelle</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td className="border border-dark/20 px-4 py-3">Traitement des demandes de contact</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td className="border border-dark/20 px-4 py-3">Communication (newsletter, organisation d'évènement)</td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td className="border border-dark/20">
-                                                    <table>
-                                                        <tr>
-                                                            <td className="border border-dark/20 px-4 py-3">Exécution du contrat ou mesures précontractuelles</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td className="border border-dark/20 px-4 py-3">Intérêt légitime</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td className="border border-dark/20 px-4 py-3">Consentement</td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
+                                                <td rowSpan={4} className="border border-dark/20 px-4 py-3">Prospects / Clients / Partenaires</td>
+                                                <td className="border border-dark/20 px-4 py-3">Gestion de la relation professionnelle</td>
+                                                <td className="border border-dark/20 px-4 py-3">Exécution du contrat ou mesures précontractuelles</td>
                                             </tr>
                                             <tr>
-                                                <td className="border border-dark/20 px-4 py-3">
-                                                    Données techniques de connexion : adresse IP, journaux de connexion, informations sur le navigateur utilisé
-                                                </td>
-                                                <td className="border border-dark/20 px-4 py-3">Prospects / Clients / Partenaires</td>
-                                                <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
-                                                <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
+                                                <td className="border border-dark/20 px-4 py-3">Traitement des demandes de contact</td>
+                                                <td className="border border-dark/20 px-4 py-3">Intérêt légitime</td>
                                             </tr>
                                             <tr>
-                                                <td className="border border-dark/20 px-4 py-3">
-                                                    Données d'analyse (Google Analytics) : pages visitées, temps de visite, données de navigation, adresse IP anonymisée
-                                                </td>
-                                                <td className="border border-dark/20 px-4 py-3">Visiteurs du Site</td>
-                                                <td className="border border-dark/20 px-4 py-3">Analyse du trafic et amélioration de l'expérience utilisateur</td>
+                                                <td className="border border-dark/20 px-4 py-3">Communication (newsletter, organisation d’évènement)</td>
                                                 <td className="border border-dark/20 px-4 py-3">Consentement</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
+                                                <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -137,7 +110,7 @@ const PrivacyPolicy: React.FC = () => {
                                 <p className="mb-4">
                                     Le Site utilise des cookies et des outils d'analyse pour améliorer l'expérience de navigation et analyser le trafic du site.
                                 </p>
-                                
+
                                 <h4 className="text-lg font-semibold text-dark mb-3 mt-4">Google Analytics</h4>
                                 <p className="mb-4">
                                     Ce site utilise Google Analytics, un service d'analyse de site web fourni par Google Ireland Limited (« Google »), pour analyser l'utilisation du Site. Google Analytics utilise des cookies pour collecter des informations sur votre utilisation du Site.
