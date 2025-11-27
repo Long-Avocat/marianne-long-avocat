@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Configure Git
+        run: |
+          git config --global user.name "Github Actions Bot"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Checkout code
         uses: actions/checkout@v4
         
