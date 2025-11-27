@@ -104,7 +104,7 @@ const ApproachSection: React.FC = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              Discutons de votre projet
+              Discutons de vos besoins
             </button>
           </div>
         </motion.div>

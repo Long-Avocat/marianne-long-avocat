@@ -36,7 +36,7 @@ const LegalMentions: React.FC = () => {
                   Le site "https://long-avocat.com/" (le "Site") est édité et appartient à <strong>Marianne LONG</strong>, Avocate au barreau de Paris
                 </p>
                 <p className="mb-2">
-                  <strong>Cabinet ML Avocat - SELASU</strong> au capital social de 1 euros
+                  <strong>Cabinet ML Avocat - SELASU</strong> au capital social de 1 euro.
                 </p>
                 <p className="mb-2">
                   Siège social : 4 rue de Rome - 75008 Paris

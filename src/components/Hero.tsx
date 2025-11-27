@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                 }}
                 className="px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
-                Me Contacter
+                Me contacter
               </button>
               <button
                 onClick={() => {
@@ -93,7 +93,6 @@ const Hero: React.FC = () => {
                     className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full"
                   />
                 </div>
-                <p className="mt-6 text-dark font-semibold text-xl">ML</p>
               </div>
             </div>
           </motion.div>

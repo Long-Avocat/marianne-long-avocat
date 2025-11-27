@@ -84,17 +84,31 @@ const PrivacyPolicy: React.FC = () => {
                                                     Informations professionnelles : fonction exercée, société d'appartenance
                                                 </td>
                                                 <td className="border border-dark/20 px-4 py-3">Prospects / Clients / Partenaires</td>
-                                                <td className="border border-dark/20 px-4 py-3">
-                                                    Gestion de la relation professionnelle<br />
-                                                    Traitement des demandes de contact<br />
-                                                    Communication (newsletter, organisation d'évènement)<br />
-                                                    Respect des obligations légales
+                                                <td className="border border-dark/20">
+                                                    <table>
+                                                        <tr>
+                                                            <td className="border border-dark/20 px-4 py-3">Gestion de la relation professionnelle</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td className="border border-dark/20 px-4 py-3">Traitement des demandes de contact</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td className="border border-dark/20 px-4 py-3">Communication (newsletter, organisation d'évènement)</td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
-                                                <td className="border border-dark/20 px-4 py-3">
-                                                    Exécution du contrat ou mesures précontractuelles<br />
-                                                    Intérêt légitime<br />
-                                                    Consentement<br />
-                                                    Respect des obligations légales
+                                                <td className="border border-dark/20">
+                                                    <table>
+                                                        <tr>
+                                                            <td className="border border-dark/20 px-4 py-3">Exécution du contrat ou mesures précontractuelles</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td className="border border-dark/20 px-4 py-3">Intérêt légitime</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td className="border border-dark/20 px-4 py-3">Consentement</td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -102,11 +116,8 @@ const PrivacyPolicy: React.FC = () => {
                                                     Données techniques de connexion : adresse IP, journaux de connexion, informations sur le navigateur utilisé
                                                 </td>
                                                 <td className="border border-dark/20 px-4 py-3">Prospects / Clients / Partenaires</td>
-                                                <td className="border border-dark/20 px-4 py-3">
-                                                    Gestion de la relation professionnelle<br />
-                                                    Traitement des demandes de contact
-                                                </td>
-                                                <td className="border border-dark/20 px-4 py-3">Intérêt légitime</td>
+                                                <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
+                                                <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
                                             </tr>
                                         </tbody>
                                     </table>
