@@ -14,7 +14,9 @@ const Home: React.FC = () => {
       <Hero />
       <ExpertiseGrid />
       <ApproachSection />
-      <TestimonialsCarousel />
+      {/* <TestimonialsCarousel /> */}
+      {/* Remove when testimonials are added again */}
+      <section className="py-80 px-4 bg-light"></section>
     </>
   )
 }
