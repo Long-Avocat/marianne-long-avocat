@@ -36,3 +36,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VITE_GA_MEASUREMENT_ID: ${{ vars.VITE_GA_MEASUREMENT_ID }}
 
+      - run: echo 'Hi ${{ env.VITE_GA_MEASUREMENT_ID }}'  # Hi Tux
