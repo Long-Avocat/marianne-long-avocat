@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import ExpertiseGrid from './components/ExpertiseGrid'
 import ApproachSection from './components/ApproachSection'
 import Footer from './components/Footer'
+import TestimonialsCarousel from './components/TestimonialsCarousel'
 import LegalMentions from './components/LegalMentions'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import CookieBanner from './components/CookieBanner'
@@ -37,9 +38,7 @@ const Home: React.FC = () => {
       <Hero />
       <ExpertiseGrid />
       <ApproachSection />
-      {/* <TestimonialsCarousel /> */}
-      {/* Remove when testimonials are added again */}
-      <section className="py-80 px-4 bg-light"></section>
+      <TestimonialsCarousel />
     </>
   )
 }

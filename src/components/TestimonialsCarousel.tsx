@@ -5,7 +5,7 @@ interface Testimonial {
   id: number
   name: string
   role: string
-  company: string
+  company?: string | null
   content: string
   avatar?: string
 }
@@ -13,31 +13,10 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Jean Dupont',
-    role: 'Directeur IT',
-    company: 'TechCorp',
-    content: 'Marianne a su comprendre nos enjeux techniques et proposer des solutions juridiques adaptées. Son approche pragmatique a fait la différence.',
-  },
-  {
-    id: 2,
-    name: 'Sophie Martin',
-    role: 'CEO',
-    company: 'DataStartup',
-    content: 'Excellent accompagnement sur notre conformité RGPD. Marianne a su allier expertise juridique et compréhension de notre business.',
-  },
-  {
-    id: 3,
-    name: 'Pierre Bernard',
-    role: 'Directeur Juridique',
-    company: 'BigTech',
-    content: 'Sa double vision client/prestataire est unique. Elle a négocié nos contrats IT avec une compréhension rare des deux parties.',
-  },
-  {
-    id: 4,
-    name: 'Marie Leclerc',
-    role: 'CFO',
-    company: 'FinanceTech',
-    content: 'Accompagnement remarquable sur notre due diligence. Marianne est rigoureuse, réactive et toujours orientée solution.',
+    name: 'Célia KROMAS',
+    role: 'Directrice juridique',
+    company: null,
+    content: 'Marianne conjugue une maîtrise approfondie des problématiques juridiques, une forte sensibilité aux enjeux business et une solide compréhension des sujets techniques. Lorsque nous avons travaillé ensemble, elle a toujours su trouver le bon équilibre entre protection juridique et avancement des projets, en proposant des solutions pragmatiques.Attentive aux besoins de ses interlocuteurs, elle instaure rapidement une relation de confiance et favorise des échanges constructifs. Son travail est rigoureux et de grande qualité.'
   },
 ]
 
@@ -104,7 +83,10 @@ const TestimonialsCarousel: React.FC = () => {
                         {testimonials[currentIndex].name}
                       </h4>
                       <p className="text-neutral">
-                        {testimonials[currentIndex].role} • {testimonials[currentIndex].company}
+                        {testimonials[currentIndex].role}
+                        {testimonials[currentIndex].company
+                          ? ` • ${testimonials[currentIndex].company}`
+                          : ''}
                       </p>
                     </div>
                   </div>
@@ -114,41 +96,47 @@ const TestimonialsCarousel: React.FC = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <button
-            onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all hover:scale-110 text-dark hover:text-primary"
-            aria-label="Témoignage précédent"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+          {testimonials.length > 1 && (
+            <>
+              <button
+                onClick={prevTestimonial}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all hover:scale-110 text-dark hover:text-primary"
+                aria-label="Témoignage précédent"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
 
-          <button
-            onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all hover:scale-110 text-dark hover:text-primary"
-            aria-label="Témoignage suivant"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+              <button
+                onClick={nextTestimonial}
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all hover:scale-110 text-dark hover:text-primary"
+                aria-label="Témoignage suivant"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </>
+          )}
 
           {/* Dots Indicator */}
-          <div className="flex justify-center gap-2 mt-8">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === currentIndex
-                    ? 'bg-primary w-8'
-                    : 'bg-neutral/30 hover:bg-neutral/50'
-                }`}
-                aria-label={`Aller au témoignage ${index + 1}`}
-              />
-            ))}
-          </div>
+          {testimonials.length > 1 && (
+            <div className="flex justify-center gap-2 mt-8">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === currentIndex
+                      ? 'bg-primary w-8'
+                      : 'bg-neutral/30 hover:bg-neutral/50'
+                  }`}
+                  aria-label={`Aller au témoignage ${index + 1}`}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>
