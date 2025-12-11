@@ -76,6 +76,7 @@ const PrivacyPolicy: React.FC = () => {
                                                 <th className="border border-dark/20 px-4 py-3 text-left font-bold text-dark">Finalités</th>
                                                 <th className="border border-dark/20 px-4 py-3 text-left font-bold text-dark">Base légale</th>
                                             </tr>
+                                        
                                         </thead>
                                         <tbody>
                                             <tr>
@@ -99,6 +100,12 @@ const PrivacyPolicy: React.FC = () => {
                                             <tr>
                                                 <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
                                                 <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="border border-dark/20 px-4 py-3">Données de navigation : cookies et préférences de navigation</td>
+                                                <td className="border border-dark/20 px-4 py-3">Utilisateur</td>
+                                                <td className="border border-dark/20 px-4 py-3">Suivi du trafic sur le Site</td>
+                                                <td className="border border-dark/20 px-4 py-3">Consentement</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -208,10 +215,8 @@ const PrivacyPolicy: React.FC = () => {
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td className="border border-dark/20 px-4 py-3">Données d'analyse (Google Analytics)</td>
-                                                <td className="border border-dark/20 px-4 py-3">
-                                                    Conservées par Google selon ses propres politiques de rétention (généralement 26 mois). Les données sont anonymisées et ML Avocat n'y a pas accès direct.
-                                                </td>
+                                                <td className="border border-dark/20 px-4 py-3">Données de navigation et les cookies</td>
+                                                <td className="border border-dark/20 px-4 py-3">Durée maximale de six mois, conformément aux recommandations de la CNIL.</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -223,6 +228,11 @@ const PrivacyPolicy: React.FC = () => {
                                 <p className="mb-4">
                                     Il est rappelé aux clients, prospects et partenaires que la suppression ou l'anonymisation sont des opérations irréversibles et que ML Avocat n'est plus, par la suite, en mesure de les restaurer.
                                 </p>
+                            </section>
+
+                            <section>
+                                <h3 className="text-xl font-semibold text-dark mb-3 mt-6">Gestion des cookies</h3>
+                                <p className="mb-4">Le Site utilise des cookies analytiques, permettant d’évaluer la fréquentation et la performance du Site. Lors de la première visite sur le Site, les Utilisateurs peuvent accepter ou refuser les cookies via un bandeau dédié. Ils peuvent également modifier leurs préférences à tout moment dans les paramètres de leur navigateur.</p>
                             </section>
 
                             <section>

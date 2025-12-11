@@ -109,11 +109,6 @@ const LegalMentions: React.FC = () => {
                   Soucieux de protéger la vie privée de nos utilisateurs et dans la mesure où nous sommes susceptibles de traiter vos données à caractère personnel lorsque vous naviguez sur notre Site, nous nous engageons à respecter la règlementation applicable en la matière et à nous conformer à notre politique de protection des données accessible en bas de page.
                 </p>
 
-                <h3 className="text-xl font-semibold text-dark mb-3 mt-6">Politique cookie</h3>
-                <p className="mb-4">
-                  Ce Site ne dépose que des cookies essentiels à son fonctionnement, qui ne nécessitent pas de consentement.
-                </p>
-
                 <h3 className="text-xl font-semibold text-dark mb-3 mt-6">Propriété intellectuelle</h3>
                 <p className="mb-4">
                   L'ensemble des éléments présents sur le Site, incluant notamment les textes, images, graphismes, logos, icônes et logiciels, sont protégés par les lois en vigueur relatives à la propriété intellectuelle.
