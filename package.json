@@ -4,6 +4,9 @@
   "description": "Landing page for Marianne Long - Avocat IT/Data/IA/Cybersécurité",
   "private": false,
   "homepage": "https://github.com/Long-Avocat/marianne-long-avocat",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

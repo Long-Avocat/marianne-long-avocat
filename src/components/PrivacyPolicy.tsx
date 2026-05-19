@@ -80,12 +80,12 @@ const PrivacyPolicy: React.FC = () => {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td rowSpan={4} className="border border-dark/20 px-4 py-3">
+                                                <td rowSpan={3} className="border border-dark/20 px-4 py-3">
                                                     <strong>Identité et coordonnées</strong> : nom de famille, prénom, adresse de courrier électronique, numéro de téléphone<br />
                                                     <strong>Informations professionnelles</strong> : fonction exercée, société d'appartenance<br />
                                                     <strong>Données techniques de connexion</strong> : adresse IP, journaux de connexion, informations sur le navigateur utilisé
                                                 </td>
-                                                <td rowSpan={4} className="border border-dark/20 px-4 py-3">Prospects / Clients / Partenaires</td>
+                                                <td rowSpan={3} className="border border-dark/20 px-4 py-3">Prospects / Clients / Partenaires</td>
                                                 <td className="border border-dark/20 px-4 py-3">Gestion de la relation professionnelle</td>
                                                 <td className="border border-dark/20 px-4 py-3">Exécution du contrat ou mesures précontractuelles</td>
                                             </tr>
@@ -101,77 +101,15 @@ const PrivacyPolicy: React.FC = () => {
                                                 <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
                                                 <td className="border border-dark/20 px-4 py-3">Respect des obligations légales</td>
                                             </tr>
-                                            <tr>
-                                                <td className="border border-dark/20 px-4 py-3">Données de navigation : cookies et préférences de navigation</td>
-                                                <td className="border border-dark/20 px-4 py-3">Utilisateur</td>
-                                                <td className="border border-dark/20 px-4 py-3">Suivi du trafic sur le Site</td>
-                                                <td className="border border-dark/20 px-4 py-3">Consentement</td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </section>
 
                             <section>
-                                <h3 className="text-xl font-semibold text-dark mb-3 mt-6">Cookies et outils d'analyse</h3>
-                                <p className="mb-4">
-                                    Le Site utilise des cookies et des outils d'analyse pour améliorer l'expérience de navigation et analyser le trafic du site.
-                                </p>
-
-                                <h4 className="text-lg font-semibold text-dark mb-3 mt-4">Google Analytics</h4>
-                                <p className="mb-4">
-                                    Ce site utilise Google Analytics, un service d'analyse de site web fourni par Google Ireland Limited (« Google »), pour analyser l'utilisation du Site. Google Analytics utilise des cookies pour collecter des informations sur votre utilisation du Site.
-                                </p>
-                                <p className="mb-4">
-                                    Les données collectées par Google Analytics incluent notamment :
-                                </p>
-                                <ul className="list-disc list-inside mb-4 space-y-2 ml-4">
-                                    <li>Le nombre de pages visitées</li>
-                                    <li>Le temps passé sur le Site</li>
-                                    <li>Les pages d'entrée et de sortie</li>
-                                    <li>Les données de navigation (type de navigateur, système d'exploitation, résolution d'écran)</li>
-                                    <li>L'adresse IP (anonymisée)</li>
-                                </ul>
-                                <p className="mb-4">
-                                    Ces données sont collectées et traitées par Google conformément à sa politique de confidentialité disponible à l'adresse suivante :{' '}
-                                    <a
-                                        href="https://policies.google.com/privacy"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-primary hover:underline"
-                                    >
-                                        https://policies.google.com/privacy
-                                    </a>
-                                </p>
-                                <p className="mb-4">
-                                    <strong>Anonymisation de l'adresse IP :</strong> L'adresse IP est anonymisée avant d'être transmise à Google Analytics, conformément aux recommandations de la CNIL.
-                                </p>
-                                <p className="mb-4">
-                                    <strong>Gestion de votre consentement :</strong> L'utilisation de Google Analytics est soumise à votre consentement. Vous pouvez accepter ou refuser les cookies d'analyse via le bandeau de cookies qui s'affiche lors de votre première visite sur le Site. Vous pouvez modifier votre choix à tout moment en supprimant les cookies de votre navigateur et en revenant sur le Site.
-                                </p>
-                                <p className="mb-4">
-                                    <strong>Durée de conservation :</strong> Les données collectées par Google Analytics sont conservées par Google selon ses propres politiques de rétention. ML Avocat n'a pas accès direct à ces données et ne les conserve pas localement.
-                                </p>
-                                <p className="mb-4">
-                                    <strong>Désactivation de Google Analytics :</strong> Vous pouvez désactiver Google Analytics en installant le module complémentaire de navigateur disponible à l'adresse suivante :{' '}
-                                    <a
-                                        href="https://tools.google.com/dlpage/gaoptout"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-primary hover:underline"
-                                    >
-                                        https://tools.google.com/dlpage/gaoptout
-                                    </a>
-                                </p>
-                            </section>
-
-                            <section>
                                 <h3 className="text-xl font-semibold text-dark mb-3 mt-6">Destinataires des données – habilitation et traçabilité</h3>
                                 <p className="mb-4">
                                     ML Avocat s'assure que les données ne soient accessibles qu'à des destinataires internes ou externes habilités (Ordre, prestataire de paiement, gestion du site).
-                                </p>
-                                <p className="mb-4">
-                                    Les données collectées via Google Analytics sont transmises à Google Ireland Limited, qui agit en qualité de sous-traitant. Ces données peuvent être transférées vers les États-Unis dans le cadre des opérations de Google, conformément aux garanties appropriées mises en place par Google (notamment les Clauses Contractuelles Types approuvées par la Commission européenne).
                                 </p>
                                 <p className="mb-4">
                                     Les destinataires des données à caractère personnel des clients, prospects et partenaires sont soumis à une obligation de confidentialité.
@@ -214,10 +152,6 @@ const PrivacyPolicy: React.FC = () => {
                                                     10 ans conformément aux obligations légales
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td className="border border-dark/20 px-4 py-3">Données de navigation et les cookies</td>
-                                                <td className="border border-dark/20 px-4 py-3">Durée maximale de six mois, conformément aux recommandations de la CNIL.</td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -228,11 +162,6 @@ const PrivacyPolicy: React.FC = () => {
                                 <p className="mb-4">
                                     Il est rappelé aux clients, prospects et partenaires que la suppression ou l'anonymisation sont des opérations irréversibles et que ML Avocat n'est plus, par la suite, en mesure de les restaurer.
                                 </p>
-                            </section>
-
-                            <section>
-                                <h3 className="text-xl font-semibold text-dark mb-3 mt-6">Gestion des cookies</h3>
-                                <p className="mb-4">Le Site utilise des cookies analytiques, permettant d’évaluer la fréquentation et la performance du Site. Lors de la première visite sur le Site, les Utilisateurs peuvent accepter ou refuser les cookies via un bandeau dédié. Ils peuvent également modifier leurs préférences à tout moment dans les paramètres de leur navigateur.</p>
                             </section>
 
                             <section>
