@@ -42,10 +42,10 @@ const LegalMentions: React.FC = () => {
                   Siège social : 4 rue de Rome - 75008 Paris
                 </p>
                 <p className="mb-2">
-                  SIRET : (à compléter)
+                  SIRET : 10083560200010
                 </p>
                 <p className="mb-2">
-                  RCS : (à compléter)
+                  RCS : 100835602
                 </p>
                 <p className="mb-2">
                   Code APE : 6910Z
