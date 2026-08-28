@@ -13,10 +13,24 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Célia KROMAS',
+    name: 'Célia Kromas',
     role: 'Directrice juridique',
-    company: null,
+    company: 'Avanade France',
     content: 'Marianne conjugue une maîtrise approfondie des problématiques juridiques, une forte sensibilité aux enjeux business et une solide compréhension des sujets techniques. Lorsque nous avons travaillé ensemble, elle a toujours su trouver le bon équilibre entre protection juridique et avancement des projets, en proposant des solutions pragmatiques.Attentive aux besoins de ses interlocuteurs, elle instaure rapidement une relation de confiance et favorise des échanges constructifs. Son travail est rigoureux et de grande qualité.'
+  },
+  {
+    id: 2,
+    name: 'Nicolas Ramos',
+    role: 'Directeur Général',
+    company: 'Avanade France',
+    content: 'Félicitations Marianne. Tu fais partie des meilleures expertes françaises du droit du numérique et en particulier de l\'IA ! Une partie significative de notre Legacy en la matière chez Avanade vient de toi, merci pour cela. Je te souhaite beaucoup de succès dans cette nouvelle page de ta carrière.'
+  },
+  {
+    id: 3,
+    name: 'Martin Franzon',
+    role: 'Créateur',
+    company: 'Narrationetcafeine.fr',
+    content: 'Lorsque je me suis lancé dans l\'entreprenariat, j\'étais un peu perdu concernant les CGV et les obligations légales liées à mon blog. Ayant travaillé avec Maître Long par le passé, je connaissais le sérieux de son travail et elle a su m\'expliquer des juridiques complexes avec beaucoup de pédagogie et de réactivité. Son accompagnement a été extrêmement rassurant pour moi : audit de mon activité, rédaction de mes documents juridiques et en prime… : plein de conseils supers utiles. Aujourd\'hui, mon blog est l\'un des plus connus de sa niche, avec plusieurs centaines de milliers de visites à son actif, et je n\'ai pas eu un seul souci juridique avec mes clients. Je recommande donc vivement maître Long si vous lancez votre activité, que vous avez besoin de CGV, ou plus simplement si vous avez un souci portant sur votre activité numérique. Elle est top !'
   },
 ]
 
